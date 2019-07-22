@@ -9,7 +9,7 @@ weekGb = '0'
 movies={}
     
     
-for i in range(5):
+for i in range(50):
     api_url = f'http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key={key}&targetDt={targetDt}&weekGb={weekGb}'
     print(api_url)
     targetDt_convert = datetime.strptime(targetDt, "%Y%m%d").date()
